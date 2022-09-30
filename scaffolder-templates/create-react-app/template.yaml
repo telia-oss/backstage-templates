@@ -63,9 +63,15 @@ spec:
       action: publish:github
       input:
         allowedHosts:
-          - github.com
+          - github.com/telia-company
         description: This is ${{ parameters.component_id }}
         repoUrl: ${{ parameters.repoUrl }}
+        # repoVisibility, when not specified on GitHub, defaults to "private"
+        # possible values:
+        #   - public
+        #   - internal
+        #   - private
+        repoVisibility: internal
 
     - id: register
       name: Register
