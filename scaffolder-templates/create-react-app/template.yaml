@@ -72,6 +72,9 @@ spec:
         #   - internal
         #   - private
         repoVisibility: internal
+        collaborators: 
+          - team: ${{ parameters.owner }}
+            access: admin
 
     - id: register
       name: Register
