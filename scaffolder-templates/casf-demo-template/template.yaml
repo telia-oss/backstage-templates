@@ -21,7 +21,7 @@ spec:
           title: Size
           type: string
           description: What size do you want?
-          ui:field: SizePicker
+          ui:field: RepoUrlPicker
           ui:options:
             allowedKinds:
               - Large
@@ -35,7 +35,7 @@ spec:
           title: Admin
           type: string
           description: Admin of the server
-          ui:field: AdminPicker
+          ui:field: OwnerPicker
           ui:options:
             allowedKinds:
               - User
