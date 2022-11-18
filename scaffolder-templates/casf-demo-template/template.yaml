@@ -11,7 +11,33 @@ spec:
   owner: backstage-admins
   type: infrastructure
   parameters:
-    - title: Provide some simple information
+    - title: Do a infrastructure selection
+      required:
+        - os_id
+        - admin
+      properties:
+        os_id:
+          title: Type
+          type: string
+          description: Size of the managed OS
+          ui:field:
+            ui:options:
+              - Small
+              - Medium
+              - Large
+        description:
+          title: Name
+          type: string
+          description: Name your server (if you do not give a name it will be defaulted to ..)
+        admin:
+          title: admins
+          type: string
+          description: Admin of the server
+          ui:field: AdminPicker
+          ui:options:
+            allowedKinds:
+              - User    
+    - title: Simple information about your project
       required:
         - component_id
         - owner
