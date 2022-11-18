@@ -71,9 +71,6 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
-            allowedOwners:
-              - backstage
-              - einarkolsen
     steps:
     - id: template
       name: Fetch Skeleton + Template
