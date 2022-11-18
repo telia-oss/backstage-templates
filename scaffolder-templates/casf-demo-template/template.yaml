@@ -11,6 +11,19 @@ spec:
   owner: backstage-admins
   type: website
   parameters:
+    - title: Select server parameters
+      required:
+        - size
+        - os
+      properties:
+        size:
+          title: Size
+          type: string
+          description: What size do you want?
+        os:
+          title: Operating System
+          type: string
+          description: What OS do you want?
     - title: Provide some simple information
       required:
         - component_id
