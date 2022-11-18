@@ -36,6 +36,7 @@ spec:
     - title: Choose a location
       required:
         - repoUrl
+        - owner
       properties:
         repoUrl:
           title: Repository Location
@@ -44,7 +45,14 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
-  steps:
+        owner:
+          title: GitHub organisation
+          type: string
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - github.com/telia-company
+    steps:
     - id: template
       name: Fetch Skeleton + Template
       action: fetch:template
