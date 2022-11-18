@@ -44,6 +44,8 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+            allowedOwners:
+              - telia-company
   steps:
     - id: template
       name: Fetch Skeleton + Template
