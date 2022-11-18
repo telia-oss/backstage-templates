@@ -47,8 +47,6 @@ spec:
               - github.com
             allowedOwners:
               - github.com/telia-company
-            allowedRepos:
-              - ${{ parameters.component_id }}
     steps:
     - id: template
       name: Fetch Skeleton + Template
