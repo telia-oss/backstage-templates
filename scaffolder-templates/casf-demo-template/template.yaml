@@ -31,7 +31,8 @@ spec:
           title: Operating System
           type: string
           description: What OS do you want?
-        title: Admin
+        admin:
+          title: Admin
           type: string
           description: Admin of the server
           ui:field: AdminPicker
