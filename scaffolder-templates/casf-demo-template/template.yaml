@@ -72,7 +72,7 @@ spec:
             allowedHosts:
               - github.com
             allowedOwners:
-              - github.com/telia-company
+              - telia-company
     steps:
     - id: template
       name: Fetch Skeleton + Template
