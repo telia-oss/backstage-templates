@@ -21,7 +21,7 @@ spec:
           title: Size
           type: string
           description: What size do you want?
-          ui:field: RepoUrlPicker
+          ui:field: SizePicker
           ui:options:
             allowedKinds:
               - Large
