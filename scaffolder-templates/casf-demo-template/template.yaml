@@ -31,10 +31,10 @@ spec:
           title: Operating System
           type: string
           description: What OS do you want?
-        admin:
-          title: User
+        title: Admin
           type: string
-          ui:field: UserPicker
+          description: Admin of the server
+          ui:field: AdminPicker
           ui:options:
             allowedKinds:
               - User
