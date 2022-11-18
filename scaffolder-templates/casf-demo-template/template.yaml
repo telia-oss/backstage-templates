@@ -72,7 +72,8 @@ spec:
             allowedHosts:
               - github.com
             allowedOwners:
-              - telia-company
+              - backstage
+              - einarkolsen
     steps:
     - id: template
       name: Fetch Skeleton + Template
