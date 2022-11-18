@@ -45,12 +45,7 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
-        owner:
-          title: GitHub organisation
-          type: string
-          ui:field: OwnerPicker
-          ui:options:
-            allowedKinds:
+            allowedOwners:
               - github.com/telia-company
     steps:
     - id: template
