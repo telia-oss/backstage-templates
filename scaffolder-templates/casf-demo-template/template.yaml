@@ -9,35 +9,9 @@ metadata:
     - templates
 spec:
   owner: backstage-admins
-  type: infrastructure
+  type: website
   parameters:
-    - title: Do a infrastructure selection
-      required:
-        - os_id
-        - admin
-      properties:
-        os_id:
-          title: Type
-          type: string
-          description: Size of the managed OS
-          ui:field:
-            ui:options:
-              - Small
-              - Medium
-              - Large
-        description:
-          title: Name
-          type: string
-          description: Name your server (if you do not give a name it will be defaulted to ..)
-        admin:
-          title: admins
-          type: string
-          description: Admin of the server
-          ui:field: AdminPicker
-          ui:options:
-            allowedKinds:
-              - User    
-    - title: Simple information about your project
+    - title: Provide some simple information
       required:
         - component_id
         - owner
@@ -62,7 +36,6 @@ spec:
     - title: Choose a location
       required:
         - repoUrl
-        - owner
       properties:
         repoUrl:
           title: Repository Location
@@ -71,7 +44,7 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
-    steps:
+  steps:
     - id: template
       name: Fetch Skeleton + Template
       action: fetch:template
