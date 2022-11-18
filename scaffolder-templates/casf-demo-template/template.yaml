@@ -15,6 +15,7 @@ spec:
       required:
         - size
         - os
+        - admin
       properties:
         size:
           title: Size
@@ -30,6 +31,13 @@ spec:
           title: Operating System
           type: string
           description: What OS do you want?
+        admin:
+          title: User
+          type: string
+          ui:field: UserPicker
+          ui:options:
+            allowedKinds:
+              - User
     - title: Provide some simple information
       required:
         - component_id
