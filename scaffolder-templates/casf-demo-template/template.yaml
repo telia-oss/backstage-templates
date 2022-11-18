@@ -20,6 +20,12 @@ spec:
           title: Size
           type: string
           description: What size do you want?
+          ui:field: SizePicker
+          ui:options:
+            allowedKinds:
+              - Large
+              - Medium
+              - Small
         os:
           title: Operating System
           type: string
@@ -34,6 +40,7 @@ spec:
           type: string
           description: Unique name of the component
           ui:field: EntityNamePicker
+          ui:autofocus: true
         description:
           title: Description
           type: string
