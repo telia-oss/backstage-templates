@@ -11,7 +11,7 @@ spec:
   owner: backstage-admins
   type: website
   parameters:
-    - title: Select server parameters
+    - title: Select Cloud Managed OS parameters
       required:
         - size
         - os
@@ -42,7 +42,7 @@ spec:
           ui:options:
             allowedKinds:
               - User
-    - title: Provide some simple information
+    - title: Provide some information about your website
       required:
         - component_id
         - owner
@@ -50,7 +50,7 @@ spec:
         component_id:
           title: Name
           type: string
-          description: Unique name of the component
+          description: Unique name of the website
           ui:field: EntityNamePicker
           ui:autofocus: true
           ui:options:
@@ -62,7 +62,7 @@ spec:
         owner:
           title: Owner
           type: string
-          description: Owner of the component
+          description: Owner of the site
           ui:field: OwnerPicker
           ui:options:
             allowedKinds:
@@ -72,7 +72,7 @@ spec:
         - repoUrl
       properties:
         repoUrl:
-          title: Repository Location
+          title: Your repository location
           type: string
           ui:field: RepoUrlPicker
           ui:options:
