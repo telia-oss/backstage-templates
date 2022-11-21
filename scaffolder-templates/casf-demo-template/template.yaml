@@ -61,6 +61,9 @@ spec:
             - Nginx
     - title: Set up DNS and FW for your server
       required:
+        - dns
+        - firewall1
+        - firewall2
       properties:
         dns:
           title: DNS
