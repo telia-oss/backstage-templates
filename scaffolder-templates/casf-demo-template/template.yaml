@@ -29,6 +29,11 @@ spec:
           title: Operating System
           type: string
           description: What OS do you want?
+          enum: 
+            - RHEL8
+            - RHEL7
+            - Ubuntu 20.04
+            - Ubuntu 18.04.6          
         admin:
           title: Admin
           type: string
