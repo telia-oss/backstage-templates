@@ -42,6 +42,18 @@ spec:
           ui:options:
             allowedKinds:
               - User
+    - title: Select software you want installed?
+      required:
+        - webserver
+      properties:
+        webserver:
+          title: Webserver
+          type: string
+          description: Select what webserver you want installed
+          enum:
+            - Apache HTTP Server
+            - lighttpd
+            - Nginx
     - title: Provide some information about your website
       required:
         - component_id
