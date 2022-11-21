@@ -15,6 +15,7 @@ spec:
       required:
         - size
         - os
+        - name
         - admin
       properties:
         size:
@@ -33,7 +34,11 @@ spec:
             - RHEL8
             - RHEL7
             - Ubuntu 20.04
-            - Ubuntu 18.04.6          
+            - Ubuntu 18.04.6
+        name:
+          title: Server name
+          type: string
+          description: What name do you want for your server?            
         admin:
           title: Admin
           type: string
@@ -54,6 +59,29 @@ spec:
             - Apache HTTP Server
             - lighttpd
             - Nginx
+    - title: Set up DNS and FW for your server
+      required:
+      properties:
+        dns:
+          title: DNS
+          type: string
+          description: Set the DNS you want?
+        firewall1:
+          title: Firewall openings
+          type: string
+          description: Where do you want the server accesable from?
+          enum:
+            - Internal VPN
+            - External VPN
+            - Internet
+        firewall2:
+          title: Firewall openings
+          type: string
+          description: Where do you want the server accesable from?
+          enum:
+            - Internal VPN
+            - External VPN
+            - Internet
     - title: Provide some information about your website
       required:
         - component_id
